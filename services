@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Services</title>
+<style>
+body{font-family:Inter;padding:40px}
+h1{margin-bottom:20px}
+</style>
+</head>
+<body>
+
+<h1>Our Services</h1>
+
+<h3>Maintenance Strategy</h3>
+<p>Preventive & predictive maintenance programs.</p>
+
+<h3>Industrial Audits</h3>
+<p>Failure analysis and efficiency optimization.</p>
+
+<h3>Training</h3>
+<p>On-site workforce development.</p>
+
+<h3>Digital Transformation</h3>
+<p>CMMS & smart systems.</p>
+
+</body>
+</html>
