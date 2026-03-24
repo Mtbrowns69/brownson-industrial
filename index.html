@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brownson Industrial Consulting</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{background:#f5f7fb;color:#1a2b4c}
+
+/* HEADER */
+header{
+  background:#0b1c36;
+  color:#fff;
+  padding:20px 50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+header h2{font-weight:700}
+nav a{
+  color:#fff;
+  margin-left:25px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(rgba(11,28,54,0.7),rgba(11,28,54,0.7)),
+  url("https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80");
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+  padding:120px 60px;
+}
+.hero h1{
+  font-size:48px;
+  max-width:700px;
+  margin-bottom:20px;
+}
+.hero p{margin-bottom:25px;font-size:18px}
+.btn{
+  padding:14px 28px;
+  border:none;
+  cursor:pointer;
+  border-radius:6px;
+  margin-right:10px;
+}
+.btn-orange{background:#ff7a00;color:#fff}
+.btn-light{background:#fff;color:#0b1c36}
+
+/* SECTION */
+section{padding:70px 50px;max-width:1200px;margin:auto}
+
+/* WHO */
+.who{
+  display:flex;
+  gap:40px;
+  align-items:center;
+}
+.who img{
+  width:400px;
+  border-radius:10px;
+}
+.who h2{margin-bottom:15px}
+
+/* CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+.card{
+  background:#fff;
+  padding:25px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+.card h3{margin-bottom:10px}
+
+/* WHY */
+.why{
+  background:linear-gradient(#0b1c36,#1f3c73);
+  color:#fff;
+  border-radius:10px;
+  padding:50px;
+}
+.why h2{text-align:center;margin-bottom:30px}
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+.why-box{
+  background:rgba(255,255,255,0.1);
+  padding:20px;
+  border-radius:10px;
+}
+
+/* RESULTS */
+.results{
+  text-align:center;
+}
+.stats{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  margin-top:20px;
+}
+.stat{
+  background:#0b1c36;
+  color:#fff;
+  padding:20px;
+  border-radius:10px;
+  width:150px;
+}
+
+/* CONTACT */
+form{
+  display:grid;
+  gap:15px;
+  max-width:700px;
+  margin:auto;
+}
+input,textarea{
+  padding:12px;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+button.submit{
+  background:#ff7a00;
+  color:#fff;
+  padding:14px;
+  border:none;
+  border-radius:6px;
+}
+
+/* FOOTER */
+footer{
+  background:#0b1c36;
+  color:#fff;
+  text-align:center;
+  padding:30px;
+  margin-top:40px;
+}
+
+/* MOBILE */
+@media(max-width:800px){
+  .who{flex-direction:column}
+  .hero h1{font-size:32px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Brownson Industrial Consulting</h2>
+<nav>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Case Studies</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>Maximizing Equipment Reliability.<br>Driving Operational Excellence.</h1>
+<p>Strategic Maintenance Consulting for Industry Leaders.</p>
+<button class="btn btn-orange">Request a Consultation</button>
+<button class="btn btn-light">Download Brochure</button>
+</div>
+
+<section class="who">
+<div>
+<h2>Who We Are</h2>
+<p>Brownson Industrial Consulting is your partner in optimizing maintenance operations. We reduce downtime, extend equipment life, and boost productivity.</p>
+</div>
+<img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80">
+</section>
+
+<section>
+<h2 style="text-align:center;margin-bottom:30px;">Our Expertise</h2>
+<div class="grid">
+<div class="card"><h3>Maintenance Strategy</h3><p>Preventive & predictive programs</p></div>
+<div class="card"><h3>Industrial Audits</h3><p>Efficiency & failure analysis</p></div>
+<div class="card"><h3>Training</h3><p>On-site staff training</p></div>
+<div class="card"><h3>Digital Maintenance</h3><p>IoT & CMMS solutions</p></div>
+</div>
+</section>
+
+<section class="why">
+<h2>Why Choose Brownson?</h2>
+<div class="why-grid">
+<div class="why-box">Hands-On Experience</div>
+<div class="why-box">Data-Driven Insights</div>
+<div class="why-box">Tailored Solutions</div>
+<div class="why-box">ROI Focused</div>
+</div>
+</section>
+
+<section class="results">
+<h2>Proven Results</h2>
+<p>"Cut downtime by 30% and improved efficiency."</p>
+<div class="stats">
+<div class="stat"><h3>30%</h3><p>Downtime</p></div>
+<div class="stat"><h3>20%</h3><p>Savings</p></div>
+<div class="stat"><h3>95%</h3><p>Satisfaction</p></div>
+</div>
+</section>
+
+<section>
+<h2 style="text-align:center;margin-bottom:20px;">Get in Touch</h2>
+<form>
+<input placeholder="Name">
+<input placeholder="Company">
+<input placeholder="Email">
+<input placeholder="Phone">
+<textarea placeholder="Message"></textarea>
+<button class="submit">Submit</button>
+</form>
+</section>
+
+<footer>
+<p>123-456-7890 | info@brownsonconsulting.com</p>
+<p>© 2026 Brownson Industrial Consulting</p>
+</footer>
+
+</body>
+</html>
