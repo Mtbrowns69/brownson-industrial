@@ -1,0 +1,39 @@
+<script>
+const form = document.getElementById('reviewForm');
+const reviewList = document.getElementById('reviewList');
+
+// Load saved reviews
+let reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+
+function displayReviews(){
+  reviewList.innerHTML = '';
+  reviews.forEach(r => {
+    const div = document.createElement('div');
+    div.className = 'review-card';
+    div.innerHTML = `
+      <h4>${r.name}</h4>
+      <div class="stars">${'★'.repeat(r.rating)}</div>
+      <p>${r.comment}</p>
+    `;
+    reviewList.appendChild(div);
+  });
+}
+
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+
+  const newReview = {
+    name: document.getElementById('name').value,
+    rating: document.getElementById('rating').value,
+    comment: document.getElementById('comment').value
+  };
+
+  reviews.push(newReview);
+  localStorage.setItem('reviews', JSON.stringify(reviews));
+
+  form.reset();
+  displayReviews();
+});
+
+displayReviews();
+</script>
