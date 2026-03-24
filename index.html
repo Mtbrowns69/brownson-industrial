@@ -5,146 +5,193 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Brownson Industrial Consulting</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
-body{background:#f4f7fb;color:#1a2b4c}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Montserrat,sans-serif}
+body{background:#eef2f7;color:#1e2a40}
 
-/* NAVBAR */
+/* HEADER */
 header{
-  position:fixed;
-  width:100%;
+  position:sticky;
   top:0;
   background:rgba(11,28,54,0.95);
-  backdrop-filter:blur(10px);
-  color:#fff;
-  padding:20px 60px;
+  backdrop-filter:blur(6px);
+  padding:18px 60px;
   display:flex;
   justify-content:space-between;
+  align-items:center;
+  color:#fff;
   z-index:1000;
 }
 nav a{
   color:#fff;
   margin-left:25px;
   text-decoration:none;
-  font-weight:500;
+  position:relative;
 }
+nav a::after{
+  content:'';
+  width:0;
+  height:2px;
+  background:#f57c00;
+  position:absolute;
+  bottom:-5px;
+  left:0;
+  transition:.3s;
+}
+nav a:hover::after{width:100%}
 
 /* HERO */
 .hero{
-  height:100vh;
-  display:flex;
-  align-items:center;
-  padding:0 60px;
-  color:#fff;
-  background:linear-gradient(rgba(11,28,54,0.75),rgba(11,28,54,0.75)),
+  background:
+  linear-gradient(rgba(11,28,54,.75),rgba(11,28,54,.75)),
   url("https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80");
   background-size:cover;
+  padding:140px 60px;
+  color:#fff;
 }
-.hero h1{
-  font-size:56px;
-  max-width:700px;
-  line-height:1.2;
-}
-.hero p{
-  margin:20px 0;
-  font-size:20px;
-}
+.hero h1{font-size:46px}
+.hero h2{font-size:34px;margin:10px 0}
+.hero p{margin:20px 0}
+
+/* BUTTONS */
 .btn{
-  padding:14px 30px;
+  padding:12px 26px;
+  border-radius:5px;
   border:none;
-  border-radius:6px;
   cursor:pointer;
+  font-weight:600;
+  transition:.3s;
 }
-.primary{background:#ff7a00;color:#fff}
-.secondary{background:#fff;color:#0b1c36;margin-left:10px}
+.btn-orange{background:#f57c00;color:#fff}
+.btn-gray{background:#e0e0e0;color:#1e2a40;margin-left:10px}
+.btn:hover{transform:translateY(-2px);opacity:.9}
 
 /* SECTION */
-section{
-  padding:100px 60px;
-  max-width:1200px;
-  margin:auto;
-}
+section{padding:80px 60px;max-width:1200px;margin:auto}
 
-/* GRID */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:30px;
+/* WHO */
+.who{
+  display:flex;
+  gap:40px;
+  align-items:center;
 }
+.who img{width:420px;border-radius:10px}
+.section-title{font-size:28px;margin-bottom:15px}
 
 /* CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
 .card{
   background:#fff;
   padding:30px;
   border-radius:12px;
+  text-align:center;
   box-shadow:0 10px 25px rgba(0,0,0,0.08);
   transition:.3s;
 }
 .card:hover{
-  transform:translateY(-10px);
+  transform:translateY(-8px);
+  box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
 
 /* WHY */
 .why{
-  background:linear-gradient(135deg,#0b1c36,#1f3c73);
+  background:linear-gradient(to right,#0b1c36,#2c4c7c);
   color:#fff;
-  border-radius:15px;
+  border-radius:12px;
   padding:60px;
+  position:relative;
+  overflow:hidden;
 }
+.why::before{
+  content:'⚙️';
+  font-size:120px;
+  position:absolute;
+  opacity:0.05;
+  top:10px;
+  left:20px;
+}
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+.why-box{
+  background:rgba(255,255,255,0.1);
+  padding:20px;
+  border-radius:10px;
+  transition:.3s;
+}
+.why-box:hover{background:rgba(255,255,255,0.2)}
 
 /* RESULTS */
 .results{
+  background:#fff;
+  padding:50px;
+  border-radius:12px;
   text-align:center;
 }
 .stats{
   display:flex;
   justify-content:center;
-  gap:40px;
-  margin-top:40px;
+  gap:30px;
+  margin-top:20px;
 }
 .stat{
   background:#0b1c36;
   color:#fff;
-  padding:30px;
-  border-radius:12px;
-  width:180px;
+  padding:25px;
+  border-radius:10px;
+  width:150px;
+  transition:.3s;
 }
+.stat:hover{transform:scale(1.05)}
 
 /* CONTACT */
-form{
-  display:grid;
-  gap:15px;
-  max-width:700px;
-  margin:auto;
+.contact{
+  text-align:center;
 }
-input,textarea{
-  padding:14px;
-  border-radius:8px;
+.contact form{
+  margin-top:20px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+.contact input,.contact textarea{
+  padding:12px;
+  border-radius:6px;
   border:1px solid #ccc;
 }
+.contact textarea{grid-column:span 3}
 .submit{
-  background:#ff7a00;
+  grid-column:span 3;
+  background:#f57c00;
   color:#fff;
-  padding:16px;
+  padding:14px;
   border:none;
-  border-radius:8px;
-  font-size:16px;
+  border-radius:6px;
+  transition:.3s;
 }
+.submit:hover{background:#e66a00}
 
 /* FOOTER */
 footer{
   background:#0b1c36;
   color:#fff;
+  padding:30px;
   text-align:center;
-  padding:40px;
+  margin-top:40px;
 }
 
 /* MOBILE */
-@media(max-width:768px){
-  .hero h1{font-size:36px}
-  section{padding:60px 20px}
+@media(max-width:800px){
+  .who{flex-direction:column}
+  .contact form{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -152,74 +199,77 @@ footer{
 <body>
 
 <header>
-<h2>Brownson</h2>
+<h2>BROWNSON</h2>
 <nav>
 <a href="#">Home</a>
 <a href="#">Services</a>
+<a href="#">Case Studies</a>
 <a href="#">About</a>
 <a href="#">Contact</a>
 </nav>
 </header>
 
 <div class="hero">
-<div>
-<h1>Maximizing Equipment Reliability.<br>Driving Operational Excellence.</h1>
+<h1>Maximizing Equipment Reliability.</h1>
+<h2>Driving Operational Excellence.</h2>
 <p>Strategic Maintenance Consulting for Industry Leaders.</p>
-<button class="btn primary">Request Consultation</button>
-<button class="btn secondary">Download Brochure</button>
-</div>
+<button class="btn btn-orange">Request a Consultation</button>
+<button class="btn btn-gray">Download Brochure</button>
 </div>
 
-<section>
-<h2>Who We Are</h2>
-<p>We partner with industrial companies to reduce downtime, extend equipment life, and drive measurable performance improvements.</p>
+<section class="who">
+<div>
+<h2 class="section-title">Who We Are</h2>
+<p>We deliver tailored solutions that reduce downtime, extend equipment life, and boost productivity for large-scale industries.</p>
+</div>
+<img src="https://images.unsplash.com/photo-1581092921461-7d65ca45393a?q=80">
 </section>
 
 <section>
-<h2>Our Expertise</h2>
-<div class="grid">
-<div class="card"><h3>Maintenance Strategy</h3><p>Preventive & predictive maintenance programs.</p></div>
-<div class="card"><h3>Industrial Audits</h3><p>Failure analysis and efficiency optimization.</p></div>
-<div class="card"><h3>Training</h3><p>On-site workforce development.</p></div>
-<div class="card"><h3>Digital Transformation</h3><p>CMMS & smart maintenance systems.</p></div>
+<h2 style="text-align:center;margin-bottom:40px;">Our Expertise</h2>
+<div class="cards">
+<div class="card"><h3>Maintenance Strategy & Optimization</h3></div>
+<div class="card"><h3>Industrial Audits & Assessments</h3></div>
+<div class="card"><h3>Training & Knowledge Transfer</h3></div>
+<div class="card"><h3>Digital Transformation</h3></div>
 </div>
 </section>
 
 <section class="why">
-<h2>Why Choose Brownson?</h2>
-<div class="grid">
-<div class="card">Hands-On Industry Experience</div>
-<div class="card">Data-Driven Decision Making</div>
-<div class="card">Tailored Solutions</div>
-<div class="card">ROI Focused Results</div>
+<h2 style="text-align:center;margin-bottom:30px;">Why Choose Brownson?</h2>
+<div class="why-grid">
+<div class="why-box">Hands-On Experience</div>
+<div class="why-box">Data-Driven Insights</div>
+<div class="why-box">Tailored Solutions</div>
+<div class="why-box">ROI Focused</div>
 </div>
 </section>
 
 <section class="results">
 <h2>Proven Results</h2>
-<p>"Reduced downtime by 30% and improved efficiency."</p>
+<p>"Brownson helped cut downtime by 30% and improve efficiency."</p>
 <div class="stats">
-<div class="stat"><h3>30%</h3><p>Downtime Reduction</p></div>
-<div class="stat"><h3>20%</h3><p>Cost Savings</p></div>
+<div class="stat"><h3>30%</h3><p>Downtime</p></div>
+<div class="stat"><h3>20%</h3><p>Savings</p></div>
 <div class="stat"><h3>95%</h3><p>Satisfaction</p></div>
 </div>
 </section>
 
-<section>
+<section class="contact">
 <h2>Get in Touch</h2>
 <form action="https://formspree.io/f/yourID" method="POST">
 <input placeholder="Name">
 <input placeholder="Company">
 <input placeholder="Email">
 <input placeholder="Phone">
+<input placeholder="Subject">
 <textarea placeholder="Message"></textarea>
 <button class="submit">Submit</button>
 </form>
 </section>
 
 <footer>
-<p>info@brownsonindustrial.com | 919-671-6198</p>
-<p>© 2026 Brownson Industrial Consulting</p>
+<p>919-671-6198 | info@brownsonindustrial.com</p>
 </footer>
 
 </body>
