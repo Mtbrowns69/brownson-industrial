@@ -4,8 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brownson Industrial Consulting Brochure</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Brownson Industrial Consulting brochure — conveyor system recovery, downtime reduction, and maintenance reliability support.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
   <style>
+    :root{
+      --navy:#0c1f3f;
+      --navy-2:#09162c;
+      --blue:#345d94;
+      --orange:#f57c00;
+      --light:#f4f6fb;
+      --text:#1c2b4a;
+      --muted:#5f6f8a;
+      --white:#ffffff;
+      --shadow:0 10px 30px rgba(0,0,0,.10);
+      --radius:16px;
+    }
+
     *{
       margin:0;
       padding:0;
@@ -14,60 +31,91 @@
     }
 
     body{
-      background:#f4f6fb;
-      color:#1c2b4a;
-      padding:40px;
+      background:var(--light);
+      color:var(--text);
+      padding:34px;
     }
 
     .brochure{
-      max-width:1000px;
+      max-width:1050px;
       margin:auto;
       background:#fff;
-      border-radius:12px;
+      border-radius:var(--radius);
       overflow:hidden;
-      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+      box-shadow:var(--shadow);
     }
 
     .hero{
       background:
-        linear-gradient(rgba(12,31,63,.78), rgba(12,31,63,.78)),
-        url("https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80");
+        linear-gradient(rgba(12,31,63,.80), rgba(12,31,63,.82)),
+        url("https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1800&auto=format&fit=crop");
       background-size:cover;
       background-position:center;
       color:#fff;
-      padding:80px 50px;
+      padding:90px 55px;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.16);
+      padding:8px 14px;
+      border-radius:999px;
+      margin-bottom:18px;
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:.3px;
     }
 
     .hero h1{
-      font-size:42px;
-      margin-bottom:10px;
+      font-size:46px;
+      margin-bottom:12px;
+      line-height:1.12;
     }
 
     .hero p{
       font-size:18px;
-      max-width:700px;
-      line-height:1.7;
+      max-width:760px;
+      line-height:1.8;
+      color:#ecf2ff;
     }
 
     .content{
-      padding:50px;
+      padding:55px;
     }
 
     .section{
-      margin-bottom:40px;
+      margin-bottom:42px;
     }
 
     .section h2{
-      font-size:28px;
-      margin-bottom:15px;
-      border-left:5px solid #f57c00;
-      padding-left:12px;
+      font-size:30px;
+      margin-bottom:16px;
+      border-left:5px solid var(--orange);
+      padding-left:14px;
+      font-weight:800;
     }
 
     .section p{
       font-size:17px;
-      line-height:1.8;
+      line-height:1.9;
       margin-bottom:15px;
+      color:#30415e;
+    }
+
+    .bullets{
+      display:grid;
+      gap:10px;
+      margin-top:12px;
+    }
+
+    .bullet{
+      background:#f7f9fd;
+      border:1px solid #e6edf7;
+      padding:14px 16px;
+      border-radius:12px;
+      font-weight:600;
+      color:#30415e;
     }
 
     .stats{
@@ -78,62 +126,79 @@
     }
 
     .stat{
-      background:#0c1f3f;
+      background:linear-gradient(135deg,var(--navy),#173766);
       color:#fff;
-      padding:30px;
-      border-radius:10px;
+      padding:34px 24px;
+      border-radius:16px;
       text-align:center;
+      box-shadow:0 12px 26px rgba(0,0,0,.12);
     }
 
     .stat h3{
-      font-size:34px;
+      font-size:36px;
       margin-bottom:8px;
     }
 
+    .stat p{
+      color:#dce6f7;
+      font-size:15px;
+      margin:0;
+    }
+
     .cta{
-      background:linear-gradient(to right,#0c1f3f,#345d94);
+      background:linear-gradient(to right,var(--navy),var(--blue));
       color:#fff;
-      padding:40px 50px;
+      padding:46px 55px;
       text-align:center;
     }
 
     .cta h2{
-      margin-bottom:10px;
-      font-size:30px;
+      margin-bottom:12px;
+      font-size:32px;
     }
 
     .cta p{
       font-size:17px;
-      margin-bottom:20px;
+      margin-bottom:22px;
+      color:#eaf0fb;
+      line-height:1.8;
     }
 
     .btn{
       display:inline-block;
-      background:#f57c00;
+      background:var(--orange);
       color:#fff;
       text-decoration:none;
       padding:14px 28px;
-      border-radius:6px;
-      font-weight:700;
+      border-radius:10px;
+      font-weight:800;
+      box-shadow:0 10px 24px rgba(245,124,0,.24);
     }
 
     .footer{
       text-align:center;
-      padding:25px;
+      padding:26px;
       font-size:14px;
-      color:#777;
+      color:#6a7892;
       background:#f8f9fc;
+      line-height:1.8;
     }
 
-    @media(max-width:800px){
+    @media(max-width:900px){
       .stats{
         grid-template-columns:1fr;
       }
+
       .hero h1{
-        font-size:32px;
+        font-size:34px;
       }
-      .content, .hero, .cta{
-        padding:30px;
+
+      .content,.hero,.cta{
+        padding:30px 24px;
+      }
+
+      body{
+        padding:14px;
       }
     }
   </style>
@@ -142,6 +207,7 @@
 
   <div class="brochure">
     <div class="hero">
+      <span class="eyebrow">Case Study • Conveyor Reliability • Downtime Reduction</span>
       <h1>Conveyor System Recovery & Downtime Reduction</h1>
       <p>
         Brownson Industrial Consulting helps manufacturers investigate equipment failures,
@@ -165,16 +231,14 @@
           Brownson Industrial Consulting performed a structured equipment investigation to identify
           mechanical, operational, and maintenance-related failure points.
         </p>
-        <p>
-          This included:
-        </p>
-        <p>
-          • Conveyor inspection and component evaluation<br>
-          • Root cause analysis of repeated stoppages<br>
-          • Corrective repair recommendations<br>
-          • Maintenance strategy improvements<br>
-          • Reliability-focused follow-up actions
-        </p>
+
+        <div class="bullets">
+          <div class="bullet">• Conveyor inspection and component evaluation</div>
+          <div class="bullet">• Root cause analysis of repeated stoppages</div>
+          <div class="bullet">• Corrective repair recommendations</div>
+          <div class="bullet">• Maintenance strategy improvements</div>
+          <div class="bullet">• Reliability-focused follow-up actions</div>
+        </div>
       </div>
 
       <div class="section">
@@ -203,9 +267,8 @@
       <div class="section">
         <h2>Why It Matters</h2>
         <p>
-          Investigating recurring equipment issues instead of only reacting to failures
-          helps manufacturers reduce costly downtime, improve line performance,
-          and protect production output.
+          Investigating recurring equipment issues instead of only reacting to failures helps manufacturers
+          reduce costly downtime, improve line performance, and protect production output.
         </p>
       </div>
     </div>
@@ -213,14 +276,15 @@
     <div class="cta">
       <h2>Need Help Solving Equipment Issues?</h2>
       <p>
-        Brownson Industrial Consulting provides maintenance consulting,
-        issue investigation, and reliability support for industrial operations.
+        Brownson Industrial Consulting provides maintenance consulting, issue investigation,
+        and reliability support for industrial operations.
       </p>
       <a href="index.html#contact" class="btn">Request a Consultation</a>
     </div>
 
     <div class="footer">
-      © 2026 Brownson Industrial Consulting | BrownsonIndustrial.com
+      © 2026 Brownson Industrial Consulting<br>
+      Wake Forest, North Carolina • 919-671-6198 • info@brownsonconsulting.com
     </div>
   </div>
 
