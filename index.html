@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brownson Industrial Consulting | Reliability, Downtime Reduction & Maintenance Excellence</title>
-  <meta name="description" content="Brownson Industrial Consulting helps manufacturers reduce downtime, solve equipment failures, improve conveyor reliability, and strengthen industrial maintenance systems.">
+  <title>Brownson Industrial Consulting | Industrial Maintenance Consulting & Reliability Support</title>
+  <meta name="description" content="Brownson Industrial Consulting helps manufacturers reduce downtime, investigate recurring failures, improve conveyor reliability, and strengthen industrial maintenance systems.">
+  <meta name="keywords" content="Industrial Maintenance Consulting, Conveyor Failure, Reliability Engineering, Bucket Elevator, Pneumatic Transfer, Bearing Analysis, Shaft Alignment, Downtime Reduction, Manufacturing Maintenance">
+  <meta name="author" content="Brownson Industrial Consulting">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <style>
     :root{
       --navy:#091b38;
@@ -31,7 +35,6 @@
     body{background:var(--light);color:var(--text);overflow-x:hidden;}
     img{max-width:100%;display:block;}
     a{text-decoration:none;color:inherit;}
-
     .container{max-width:var(--max);margin:auto;padding:0 28px;}
 
     header{
@@ -61,13 +64,12 @@
     nav a{color:#fff;font-size:14px;font-weight:700;position:relative;}
     nav a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--orange);transition:.3s;}
     nav a:hover::after{width:100%;}
-
     .nav-cta{background:var(--orange);color:#fff;padding:12px 18px;border-radius:12px;font-weight:800;box-shadow:0 10px 24px rgba(245,124,0,.28);}
 
     .hero{
-      position:relative;min-height:94vh;display:flex;align-items:center;
+      position:relative;min-height:95vh;display:flex;align-items:center;
       background:
-        linear-gradient(rgba(9,27,56,.80), rgba(9,27,56,.86)),
+        linear-gradient(rgba(9,27,56,.82), rgba(9,27,56,.88)),
         url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1800&auto=format&fit=crop');
       background-size:cover;background-position:center;
       color:#fff;overflow:hidden;
@@ -79,19 +81,27 @@
     .hero::before{width:320px;height:320px;background:var(--orange);top:70px;right:5%;}
     .hero::after{width:280px;height:280px;background:#6da8ff;bottom:40px;left:4%;}
 
-    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:110px 0 90px;position:relative;z-index:1;}
+    .hero-grid{
+      display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;
+      padding:110px 0 90px;position:relative;z-index:1;
+    }
+
     .eyebrow{
       display:inline-flex;align-items:center;gap:8px;
       background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.14);
       padding:10px 16px;border-radius:999px;font-size:12px;font-weight:800;
       letter-spacing:.6px;text-transform:uppercase;margin-bottom:20px;
     }
-    .hero h2{font-size:64px;line-height:1.02;font-weight:900;max-width:800px;}
+
+    .hero h2{font-size:62px;line-height:1.02;font-weight:900;max-width:820px;}
     .hero h3{font-size:30px;font-weight:600;color:#dfe8f7;margin:12px 0 20px;}
-    .hero p{font-size:18px;line-height:1.85;color:#eef4ff;max-width:760px;}
+    .hero p{font-size:18px;line-height:1.9;color:#eef4ff;max-width:780px;}
     .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px;}
 
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 24px;border-radius:14px;font-weight:800;font-size:14px;border:none;cursor:pointer;transition:.28s ease;}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;padding:15px 24px;
+      border-radius:14px;font-weight:800;font-size:14px;border:none;cursor:pointer;transition:.28s ease;
+    }
     .btn:hover{transform:translateY(-2px);}
     .btn-primary{background:var(--orange);color:#fff;box-shadow:0 12px 26px rgba(245,124,0,.28);}
     .btn-secondary{background:rgba(255,255,255,.94);color:var(--text);}
@@ -107,43 +117,54 @@
       background:rgba(255,255,255,.12);padding:18px;border-radius:18px;border:1px solid rgba(255,255,255,.12);
     }
     .metric h5{font-size:28px;margin-bottom:6px;}
-    .metric p{font-size:14px;line-height:1.6;color:#eef4ff;}
+    .metric p{font-size:14px;line-height:1.7;color:#eef4ff;}
 
     section{padding:90px 0;}
     .section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:34px;}
     .section-kicker{color:var(--orange);font-size:13px;font-weight:900;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;}
-    .section-title{font-size:42px;line-height:1.08;font-weight:900;max-width:760px;}
-    .section-sub{font-size:17px;line-height:1.85;color:var(--muted);max-width:640px;}
+    .section-title{font-size:42px;line-height:1.08;font-weight:900;max-width:780px;}
+    .section-sub{font-size:17px;line-height:1.9;color:var(--muted);max-width:680px;}
 
     .intro-grid,.case-grid,.contact-grid,.brochure-grid,.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center;}
-
     .panel{
       background:var(--white);border:1px solid rgba(9,27,56,.06);border-radius:26px;padding:34px;box-shadow:var(--shadow);
     }
 
-    .about-points,.service-grid,.systems-grid,.industry-grid,.stats-grid,.review-grid,.brochure-cards{display:grid;gap:18px;}
+    .about-points,.service-grid,.systems-grid,.industry-grid,.stats-grid,.review-grid,.brochure-cards,.gallery-grid{display:grid;gap:18px;}
     .about-points{grid-template-columns:repeat(2,1fr);margin-top:20px;}
-    .point,.system-card,.industry-card,.service-card,.stat-card,.review-card,.brochure-card{
-      background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 10px 24px rgba(0,0,0,.05);
-    }
-
     .service-grid{grid-template-columns:repeat(3,1fr);}
     .systems-grid{grid-template-columns:repeat(3,1fr);}
     .industry-grid{grid-template-columns:repeat(4,1fr);}
     .stats-grid{grid-template-columns:repeat(4,1fr);}
     .review-grid{grid-template-columns:repeat(3,1fr);}
     .brochure-cards{grid-template-columns:repeat(3,1fr);margin-top:26px;}
+    .gallery-grid{grid-template-columns:repeat(3,1fr);}
+
+    .point,.system-card,.industry-card,.service-card,.stat-card,.review-card,.brochure-card,.gallery-card,.faq-card{
+      background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 10px 24px rgba(0,0,0,.05);
+    }
 
     .icon-badge{
       width:54px;height:54px;border-radius:16px;background:linear-gradient(135deg,var(--navy),var(--steel));
       display:grid;place-items:center;color:#fff;font-size:24px;box-shadow:0 12px 26px rgba(9,27,56,.18);margin-bottom:16px;
     }
 
-    .service-card h3,.system-card h3,.industry-card h3,.brochure-card h3{font-size:20px;line-height:1.35;margin-bottom:10px;}
-    .service-card p,.system-card p,.industry-card p,.brochure-card p,.point p,.review-card p{font-size:15px;line-height:1.85;color:var(--muted);}
-    .point strong{display:block;font-size:16px;margin-bottom:8px;}
+    .service-card h3,.system-card h3,.industry-card h3,.brochure-card h3,.faq-card h3{
+      font-size:20px;line-height:1.35;margin-bottom:10px;
+    }
 
-    .image-card img,.about-grid img,.case-grid img,.brochure-grid img{width:100%;height:100%;min-height:420px;object-fit:cover;border-radius:24px;box-shadow:0 18px 36px rgba(0,0,0,.12);}
+    .service-card p,.system-card p,.industry-card p,.brochure-card p,.point p,.review-card p,.faq-card p{
+      font-size:15px;line-height:1.9;color:var(--muted);
+    }
+
+    .point strong{display:block;font-size:16px;margin-bottom:8px;}
+    .image-card img,.about-grid img,.case-grid img,.brochure-grid img,.gallery-card img{
+      width:100%;height:100%;min-height:420px;object-fit:cover;border-radius:24px;box-shadow:0 18px 36px rgba(0,0,0,.12);
+    }
+
+    .gallery-card img{min-height:280px;}
+    .gallery-card h3{font-size:18px;margin-top:14px;margin-bottom:8px;}
+    .gallery-card p{font-size:14px;line-height:1.8;color:var(--muted);}
 
     .systems-wrap{
       background:
@@ -162,9 +183,11 @@
 
     .case-section .section-title,.case-section .section-sub,.case-section p{color:#fff;}
     .case-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px;}
-    .case-box{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.14);padding:20px;border-radius:18px;backdrop-filter:blur(6px);}
+    .case-box{
+      background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.14);padding:20px;border-radius:18px;backdrop-filter:blur(6px);
+    }
     .case-box h4{font-size:28px;margin-bottom:8px;}
-    .case-box p{color:#eef4ff;font-size:15px;line-height:1.75;}
+    .case-box p{color:#eef4ff;font-size:15px;line-height:1.8;}
 
     .brochure-wrap{
       background:linear-gradient(135deg,#fff,#f8fbff);
@@ -174,15 +197,16 @@
     .download-box{
       background:linear-gradient(135deg,var(--navy),var(--steel));color:#fff;border-radius:26px;padding:34px;box-shadow:0 20px 50px rgba(9,27,56,.18);
     }
-    .download-box p{color:#eaf0fb;line-height:1.85;margin:12px 0 22px;}
+    .download-box p{color:#eaf0fb;line-height:1.9;margin:12px 0 22px;}
 
-    .reviews-wrap,.contact-wrap{background:#fff;border-radius:30px;padding:40px;box-shadow:var(--shadow);}
+    .reviews-wrap,.contact-wrap,.faq-wrap{
+      background:#fff;border-radius:30px;padding:40px;box-shadow:var(--shadow);
+    }
+
     .stars{color:var(--orange);font-size:18px;letter-spacing:2px;margin-bottom:10px;}
-
     .review-form,.contact-form{display:grid;gap:14px;margin-top:24px;}
     .review-form{grid-template-columns:1fr 1fr;}
     .contact-form{grid-template-columns:repeat(2,1fr);}
-
     input,textarea,select{
       width:100%;padding:15px 16px;border-radius:14px;border:1px solid var(--line);background:#fbfdff;color:var(--text);font-size:15px;
     }
@@ -204,9 +228,27 @@
     .footer-bar a:hover{color:var(--orange);}
     footer{background:#071427;color:#b9c7dd;text-align:center;padding:24px 20px;font-size:13px;line-height:1.9;}
 
+    .sticky-mobile{
+      display:none;
+      position:fixed;bottom:0;left:0;width:100%;z-index:9999;
+      background:rgba(9,27,56,.97);
+      border-top:1px solid rgba(255,255,255,.08);
+      box-shadow:0 -8px 24px rgba(0,0,0,.16);
+      padding:10px 12px;
+    }
+    .sticky-mobile-wrap{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
+    }
+    .sticky-mobile a{
+      text-align:center;padding:12px 10px;border-radius:12px;font-weight:800;font-size:13px;
+    }
+    .sticky-call{background:var(--orange);color:#fff;}
+    .sticky-email{background:#fff;color:var(--text);}
+    .sticky-quote{background:#1f3e68;color:#fff;border:1px solid rgba(255,255,255,.08);}
+
     @media (max-width:1100px){
       .hero-grid,.intro-grid,.case-grid,.contact-grid,.brochure-grid,.about-grid,.section-head{grid-template-columns:1fr;}
-      .service-grid,.systems-grid,.industry-grid,.stats-grid,.review-grid,.brochure-cards,.case-highlights{grid-template-columns:repeat(2,1fr);}
+      .service-grid,.systems-grid,.industry-grid,.stats-grid,.review-grid,.brochure-cards,.case-highlights,.gallery-grid{grid-template-columns:repeat(2,1fr);}
       .hero h2{font-size:50px;}
     }
 
@@ -218,13 +260,16 @@
       .hero h2{font-size:38px;}
       .hero h3{font-size:24px;}
       .section-title{font-size:32px;}
-      .service-grid,.systems-grid,.industry-grid,.stats-grid,.review-grid,.brochure-cards,.case-highlights,.about-points,.hero-metrics,.review-form,.contact-form{grid-template-columns:1fr;}
-      .panel,.case-section,.brochure-wrap,.reviews-wrap,.contact-wrap,.systems-wrap{padding:24px;}
+      .service-grid,.systems-grid,.industry-grid,.stats-grid,.review-grid,.brochure-cards,.case-highlights,.about-points,.hero-metrics,.review-form,.contact-form,.gallery-grid{grid-template-columns:1fr;}
+      .panel,.case-section,.brochure-wrap,.reviews-wrap,.contact-wrap,.systems-wrap,.faq-wrap{padding:24px;}
       .image-card img,.about-grid img,.case-grid img,.brochure-grid img{min-height:300px;}
+      .sticky-mobile{display:block;}
+      body{padding-bottom:78px;}
     }
   </style>
 </head>
 <body>
+
   <header>
     <div class="nav-wrap">
       <div class="logo">
@@ -240,6 +285,7 @@
         <a href="#services">Services</a>
         <a href="#systems">Systems</a>
         <a href="#case-study">Case Study</a>
+        <a href="#gallery">Projects</a>
         <a href="#brochure">Brochure</a>
         <a href="#reviews">Reviews</a>
         <a href="#contact" class="nav-cta">Book Consultation</a>
@@ -254,8 +300,9 @@
         <h2>Reduce Downtime. Solve Failures. Strengthen Reliability.</h2>
         <h3>Elite industrial maintenance support for manufacturers and production facilities.</h3>
         <p>
-          Brownson Industrial Consulting helps plants identify recurring equipment issues, improve maintenance systems,
-          restore conveyor performance, strengthen rotating equipment reliability, and create practical long-term fixes that protect uptime.
+          Brownson Industrial Consulting helps manufacturing plants reduce equipment downtime, investigate recurring failures,
+          improve maintenance systems, strengthen conveyor reliability, support rotating equipment health, and build long-term
+          mechanical stability around production-critical assets.
         </p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">Request a Consultation</a>
@@ -277,11 +324,11 @@
           </div>
           <div class="metric">
             <h5>Smarter</h5>
-            <p>Maintenance decision-making based on root cause, wear patterns, alignment, and equipment condition.</p>
+            <p>Maintenance decisions based on root cause, wear patterns, alignment, and equipment condition.</p>
           </div>
           <div class="metric">
             <h5>Stronger</h5>
-            <p>Reliability systems for production-critical assets and plant support equipment.</p>
+            <p>Reliability systems for production-critical assets and everyday plant operations.</p>
           </div>
         </div>
       </div>
@@ -291,29 +338,31 @@
   <section>
     <div class="container about-grid">
       <div class="panel">
-        <div class="section-kicker">About Brownson</div>
-        <h2 class="section-title">Practical plant-floor support built around real industrial problems.</h2>
+        <div class="section-kicker">What Industrial Maintenance Does</div>
+        <h2 class="section-title">Every day inside a manufacturing plant, industrial maintenance keeps production alive.</h2>
         <p class="section-sub" style="margin-top:18px;">
-          Brownson Industrial Consulting is built to support manufacturing teams that need real answers — not generic advice.
-          We focus on maintenance performance, equipment reliability, repeat failure elimination, and operational stability.
+          Industrial maintenance is responsible for keeping equipment running safely, consistently, and efficiently.
+          In a manufacturing plant, maintenance teams are constantly dealing with breakdowns, wear, vibration, alignment,
+          lubrication, mechanical failure, material flow issues, conveyor problems, drive issues, sanitation-related wear,
+          and recurring downtime that can slow or stop production.
         </p>
 
         <div class="about-points">
           <div class="point">
-            <strong>Failure Investigation</strong>
-            <p>Find the actual source of recurring stoppages, wear, vibration, leakage, or drive-related failure.</p>
+            <strong>Preventing Equipment Failure</strong>
+            <p>Monitoring wear, replacing failing parts, improving PMs, and addressing issues before they shut production down.</p>
           </div>
           <div class="point">
-            <strong>Reliability Improvement</strong>
-            <p>Improve uptime through better alignment, inspections, component condition tracking, and repair strategy.</p>
+            <strong>Troubleshooting Breakdowns</strong>
+            <p>Responding to mechanical failures, conveyors stopping, bearings overheating, transfer issues, and repeated faults.</p>
           </div>
           <div class="point">
-            <strong>Maintenance Systems</strong>
-            <p>Strengthen PMs, work execution, failure follow-up, and maintenance accountability in plant operations.</p>
+            <strong>Improving Reliability</strong>
+            <p>Reducing repeat failures through better inspections, alignment, lubrication, root cause investigation, and repair quality.</p>
           </div>
           <div class="point">
-            <strong>Industrial Problem Solving</strong>
-            <p>Support for conveyors, rotating equipment, transfer systems, motors, bearings, and critical process equipment.</p>
+            <strong>Protecting Uptime</strong>
+            <p>Keeping production moving by maintaining the systems that directly affect throughput, efficiency, and plant stability.</p>
           </div>
         </div>
       </div>
@@ -332,7 +381,8 @@
           <h2 class="section-title">Industrial maintenance consulting designed to improve uptime and performance.</h2>
         </div>
         <p class="section-sub">
-          We support manufacturers with practical reliability solutions, issue investigation, and maintenance improvement strategies that reduce repeat failures and strengthen operations.
+          We support manufacturers with practical reliability solutions, issue investigation, maintenance improvement strategies,
+          and mechanical troubleshooting that reduce repeat failures and strengthen production stability.
         </p>
       </div>
 
@@ -340,32 +390,32 @@
         <div class="service-card">
           <div class="icon-badge">🛠</div>
           <h3>Maintenance Strategy & PM Optimization</h3>
-          <p>Build better preventive and predictive maintenance plans around critical assets, wear points, and recurring failures.</p>
+          <p>Build stronger preventive and predictive maintenance plans around critical assets, wear points, lubrication, and recurring failures.</p>
         </div>
         <div class="service-card">
           <div class="icon-badge">🔍</div>
           <h3>Root Cause Failure Analysis</h3>
-          <p>Investigate why failures keep returning and identify the true drivers behind breakdowns, misalignment, and premature wear.</p>
+          <p>Investigate why failures keep returning and identify the real drivers behind downtime, misalignment, wear, vibration, and breakdowns.</p>
         </div>
         <div class="service-card">
           <div class="icon-badge">📊</div>
           <h3>Downtime & Reliability Assessments</h3>
-          <p>Review failure history, maintenance response, recurring downtime patterns, and equipment condition to uncover improvement opportunities.</p>
+          <p>Review failure history, recurring downtime patterns, maintenance response, and equipment condition to uncover major improvement opportunities.</p>
         </div>
         <div class="service-card">
           <div class="icon-badge">⚙</div>
           <h3>Mechanical Troubleshooting Support</h3>
-          <p>Hands-on support for chronic equipment issues involving drives, motors, shafts, bearings, transfer systems, and mechanical assemblies.</p>
+          <p>Hands-on support for chronic equipment issues involving conveyors, motors, shafts, bearings, transfer systems, pumps, and mechanical assemblies.</p>
         </div>
         <div class="service-card">
           <div class="icon-badge">📈</div>
           <h3>Asset Reliability Improvement</h3>
-          <p>Reduce repeat failures by improving installation quality, inspections, lubrication practices, and condition-based follow-up.</p>
+          <p>Reduce repeat failures by improving installation quality, inspections, lubrication practices, and condition-based maintenance follow-up.</p>
         </div>
         <div class="service-card">
           <div class="icon-badge">👷</div>
           <h3>Maintenance Team Development</h3>
-          <p>Support maintenance leadership and technicians with practical systems, expectations, troubleshooting structure, and reliability thinking.</p>
+          <p>Support maintenance leadership and technicians with practical systems, troubleshooting structure, accountability, and reliability thinking.</p>
         </div>
       </div>
     </div>
@@ -379,7 +429,8 @@
           <h2 class="section-title">High-impact industrial systems we help investigate, improve, and stabilize.</h2>
         </div>
         <p class="section-sub">
-          We focus on the systems that create the biggest operational headaches when they fail — especially the ones tied directly to throughput, material movement, and production reliability.
+          We focus on the systems that create the biggest operational headaches when they fail — especially the ones tied directly
+          to throughput, material movement, production reliability, and day-to-day manufacturing performance.
         </p>
       </div>
 
@@ -387,32 +438,61 @@
         <div class="system-card">
           <div class="icon-badge">🔗</div>
           <h3>Conveyor System Failures</h3>
-          <p>Support for belt tracking issues, chain wear, sprocket problems, product backup, carryback, transfer point problems, guarding interference, and repeated conveyor stoppages.</p>
+          <p>
+            Conveyor systems are the backbone of many manufacturing operations, and when they fail, production slows fast.
+            We help investigate belt tracking issues, chain wear, sprocket problems, product backup, carryback, transfer point failures,
+            guarding interference, motor/drive issues, and repeated conveyor stoppages that create unnecessary downtime.
+          </p>
         </div>
+
         <div class="system-card">
           <div class="icon-badge">🪣</div>
           <h3>Bucket Elevator Systems</h3>
-          <p>Investigate belt and bucket wear, boot section issues, pulley lagging problems, casing alignment, discharge inefficiency, and recurring material handling breakdowns.</p>
+          <p>
+            Bucket elevators play a major role in vertical material handling, but common failures often go overlooked until they become serious.
+            We support investigation into belt and bucket wear, boot section issues, pulley lagging problems, casing alignment, discharge inefficiency,
+            material buildup, and recurring breakdowns that affect plant flow.
+          </p>
         </div>
+
         <div class="system-card">
           <div class="icon-badge">💨</div>
           <h3>Pneumatic Transfer Systems</h3>
-          <p>Assess plugging, line restriction, blower performance, air leaks, pickup point inefficiencies, product buildup, and transfer consistency problems.</p>
+          <p>
+            Pneumatic systems can quietly become major downtime drivers when performance drops.
+            We help assess plugging, line restriction, blower performance, air leaks, pickup point inefficiencies,
+            product buildup, transfer inconsistency, and material handling disruptions.
+          </p>
         </div>
+
         <div class="system-card">
           <div class="icon-badge">⚖</div>
           <h3>Scaling & Weighing Systems</h3>
-          <p>Support for inconsistent readings, feed irregularity, mechanical interference, drift, calibration concerns, and equipment conditions that impact production accuracy.</p>
+          <p>
+            Inaccurate scaling can create product inconsistency, waste, and process instability.
+            We support issues involving drift, inconsistent feed, mechanical interference, poor flow behavior,
+            calibration-related conditions, and equipment concerns affecting process accuracy.
+          </p>
         </div>
+
         <div class="system-card">
           <div class="icon-badge">📏</div>
           <h3>Motor & Shaft Alignment</h3>
-          <p>Improve coupling life, reduce vibration, prevent premature bearing failure, and correct alignment-related mechanical stress across rotating assets.</p>
+          <p>
+            Alignment issues are one of the most common hidden causes of mechanical failure.
+            We help improve coupling life, reduce vibration, prevent premature bearing damage,
+            minimize shaft stress, and correct alignment-related issues across rotating assets.
+          </p>
         </div>
+
         <div class="system-card">
           <div class="icon-badge">🌀</div>
           <h3>Bearing Analysis & Wear Patterns</h3>
-          <p>Evaluate heat, noise, lubrication issues, shaft condition, contamination, overloading, and installation quality to reduce repeat bearing failures.</p>
+          <p>
+            Bearings often fail for reasons beyond the bearing itself.
+            We evaluate heat, noise, lubrication issues, shaft condition, contamination, overloading,
+            installation quality, and wear patterns to reduce repeat bearing failures.
+          </p>
         </div>
       </div>
     </div>
@@ -426,13 +506,14 @@
           <h2 class="section-title">Additional maintenance and reliability areas that matter in real plant operations.</h2>
         </div>
         <p class="section-sub">
-          Downtime rarely comes from one issue alone. We look at the surrounding systems, practices, and failure patterns that create bigger maintenance problems over time.
+          Downtime rarely comes from one issue alone. We look at the surrounding systems, practices, and failure patterns
+          that create bigger maintenance problems over time.
         </p>
       </div>
 
       <div class="industry-grid">
-        <div class="industry-card"><h3>Lubrication Program Gaps</h3><p>Wrong intervals, contamination exposure, overgreasing, undergreasing, and lubrication route weaknesses.</p></div>
-        <div class="industry-card"><h3>Gearbox & Drive Issues</h3><p>Heat, backlash, leaking seals, coupling stress, noise, and repeated drivetrain reliability concerns.</p></div>
+        <div class="industry-card"><h3>Lubrication Program Gaps</h3><p>Wrong intervals, contamination exposure, overgreasing, undergreasing, and lubrication route weaknesses that increase wear and shorten equipment life.</p></div>
+        <div class="industry-card"><h3>Gearbox & Drive Issues</h3><p>Heat, backlash, leaking seals, coupling stress, noise, and recurring drivetrain reliability concerns affecting uptime.</p></div>
         <div class="industry-card"><h3>Pump & Flow Problems</h3><p>Seal failures, cavitation symptoms, leakage, alignment concerns, and recurring fluid handling inefficiencies.</p></div>
         <div class="industry-card"><h3>Vibration & Mechanical Condition</h3><p>Visible indicators of looseness, imbalance, resonance, wear, and misalignment affecting asset health.</p></div>
         <div class="industry-card"><h3>Sanitation & Product Buildup Risk</h3><p>Mechanical reliability issues caused by product intrusion, residue accumulation, and inaccessible maintenance points.</p></div>
@@ -450,8 +531,9 @@
         <div>
           <h2 class="section-title">Conveyor system investigation that led to 30% less downtime.</h2>
           <p class="section-sub" style="color:#e7eefc;margin-top:18px;">
-            A manufacturing operation experienced recurring conveyor interruptions, transfer inconsistency, and repeated production loss.
-            Instead of continuing to patch the same symptoms, the system was investigated from the mechanical and operational side.
+            A manufacturing operation experienced recurring conveyor interruptions, transfer inconsistency,
+            wear-related mechanical issues, and repeated production loss. Instead of continuing to patch the same symptoms,
+            the system was investigated from the mechanical and operational side.
           </p>
           <p style="margin-top:18px;line-height:1.9;color:#eef4ff;">
             Brownson Industrial Consulting reviewed the conveyor path, wear points, transfer conditions, alignment concerns,
@@ -460,7 +542,7 @@
           </p>
           <p style="margin-top:18px;line-height:1.9;color:#eef4ff;">
             <strong>Result:</strong> After issue investigation and targeted fixes, the facility achieved <strong>30% less downtime</strong>,
-            stronger reliability, and better maintenance follow-up around conveyor performance.
+            stronger conveyor reliability, better material flow, and improved maintenance follow-up around equipment performance.
           </p>
 
           <div class="case-highlights">
@@ -471,6 +553,39 @@
         </div>
         <div>
           <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1800&auto=format&fit=crop" alt="Conveyor system being repaired in a factory">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Project Focus Areas</div>
+          <h2 class="section-title">The kinds of industrial maintenance work that directly affect uptime.</h2>
+        </div>
+        <p class="section-sub">
+          These are the types of maintenance challenges that often create recurring downtime, production instability,
+          and hidden reliability losses inside a manufacturing plant.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1581092921461-7d65ca45393a?q=80&w=1600&auto=format&fit=crop" alt="Industrial conveyor inspection">
+          <h3>Conveyor Repair & Inspection</h3>
+          <p>Supporting conveyor systems through issue investigation, wear evaluation, alignment review, and mechanical troubleshooting.</p>
+        </div>
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1800&auto=format&fit=crop" alt="Factory equipment maintenance">
+          <h3>Plant Reliability Support</h3>
+          <p>Helping manufacturing teams improve uptime, reduce repeat failures, and strengthen maintenance follow-up.</p>
+        </div>
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1800&auto=format&fit=crop" alt="Industrial equipment troubleshooting">
+          <h3>Equipment Failure Investigation</h3>
+          <p>Finding the real causes behind recurring mechanical issues instead of repeatedly repairing the same symptoms.</p>
         </div>
       </div>
     </div>
@@ -514,23 +629,29 @@
     </div>
   </section>
 
-  <section>
-    <div class="container">
+  <section id="faq">
+    <div class="container faq-wrap">
       <div class="section-head">
         <div>
-          <div class="section-kicker">Why Brownson</div>
-          <h2 class="section-title">Built around the kind of maintenance problems plants actually deal with every week.</h2>
+          <div class="section-kicker">FAQ</div>
+          <h2 class="section-title">Questions industrial clients are likely to ask.</h2>
         </div>
-        <p class="section-sub">
-          We are not here to hand over theory and disappear. The goal is to help operations solve costly recurring issues and create maintenance improvements that hold up under real production pressure.
-        </p>
+        <p class="section-sub">This helps new visitors understand exactly what Brownson Industrial Consulting can help solve.</p>
       </div>
 
-      <div class="stats-grid">
-        <div class="stat-card"><div class="icon-badge">🏭</div><h3 style="font-size:20px;margin-bottom:8px;">Plant-Focused</h3><p>Designed for manufacturing operations, production support, and uptime protection.</p></div>
-        <div class="stat-card"><div class="icon-badge">🧠</div><h3 style="font-size:20px;margin-bottom:8px;">Root Cause Mindset</h3><p>Fixing what is really driving the failure instead of repeating temporary repairs.</p></div>
-        <div class="stat-card"><div class="icon-badge">🔩</div><h3 style="font-size:20px;margin-bottom:8px;">Mechanical Depth</h3><p>Support across conveyors, bearings, shafts, drives, transfer systems, and rotating equipment.</p></div>
-        <div class="stat-card"><div class="icon-badge">📉</div><h3 style="font-size:20px;margin-bottom:8px;">Downtime Reduction</h3><p>Focused on improving uptime, reliability, and maintenance performance where it matters most.</p></div>
+      <div class="systems-grid">
+        <div class="faq-card">
+          <h3>What kinds of equipment issues do you help with?</h3>
+          <p>We support recurring downtime, conveyor failures, bucket elevator issues, pneumatic transfer problems, scaling inconsistencies, alignment concerns, bearing failures, and broader mechanical reliability issues.</p>
+        </div>
+        <div class="faq-card">
+          <h3>Do you help with repeat failures?</h3>
+          <p>Yes. A major focus is identifying why failures keep coming back and improving the maintenance response so the same issue does not continue costing production time.</p>
+        </div>
+        <div class="faq-card">
+          <h3>Can you help improve plant reliability?</h3>
+          <p>Yes. We support maintenance system improvement, downtime reduction strategy, equipment issue investigation, and practical reliability strengthening around critical assets.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -580,6 +701,7 @@
             <input type="tel" name="phone" placeholder="Phone">
             <input type="text" name="subject" class="full" placeholder="Subject">
             <textarea name="message" class="full" placeholder="Tell us about your maintenance issue, recurring downtime, or project." required></textarea>
+            <input type="hidden" name="_next" value="thank-you.html">
             <button class="btn btn-primary full" type="submit">Request Consultation</button>
           </form>
         </div>
@@ -625,9 +747,18 @@
     <p>Industrial Maintenance Consulting • Reliability Support • Conveyor System Investigation • Downtime Reduction</p>
   </footer>
 
+  <div class="sticky-mobile">
+    <div class="sticky-mobile-wrap">
+      <a href="tel:9196716198" class="sticky-call">Call Now</a>
+      <a href="mailto:info@brownsonconsulting.com" class="sticky-email">Email</a>
+      <a href="#contact" class="sticky-quote">Get Quote</a>
+    </div>
+  </div>
+
   <script>
     const form = document.getElementById('reviewForm');
     const reviewList = document.getElementById('reviewList');
+
     let reviews = JSON.parse(localStorage.getItem('brownson_reviews')) || [
       {
         name: 'Operations Manager',
@@ -675,60 +806,5 @@
 
     displayReviews();
   </script>
-  <section>
-    <div class="container" style="padding-bottom:20px;">
-      <div class="section-head">
-        <div>
-          <div class="section-kicker">Launch Upgrades</div>
-          <h2 class="section-title">Luxury launch features built to help this business look bigger, stronger, and more credible.</h2>
-        </div>
-        <p class="section-sub">These additions make the site feel more established and convert more visitors into real consultation requests.</p>
-      </div>
-
-      <div class="industry-grid">
-        <div class="industry-card"><h3>Google Reviews CTA</h3><p>Add your live Google review link so visitors can leave public reviews and build trust faster.</p></div>
-        <div class="industry-card"><h3>Project Gallery</h3><p>Show conveyor repairs, maintenance work, equipment inspections, and plant-floor credibility with image sections.</p></div>
-        <div class="industry-card"><h3>FAQ Section</h3><p>Answer common client questions around downtime, conveyors, reliability support, and consulting services.</p></div>
-        <div class="industry-card"><h3>Service Request Flow</h3><p>Guide leads with structured service inquiry options for troubleshooting, downtime reduction, or reliability review.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="faq">
-    <div class="container panel">
-      <div class="section-head">
-        <div>
-          <div class="section-kicker">FAQ</div>
-          <h2 class="section-title">Questions industrial clients are likely to ask.</h2>
-        </div>
-        <p class="section-sub">This helps new visitors understand exactly what Brownson Industrial Consulting can help solve.</p>
-      </div>
-
-      <div class="systems-grid">
-        <div class="system-card"><h3>What kinds of equipment issues do you help with?</h3><p>We support recurring downtime, conveyor failures, bucket elevator issues, pneumatic transfer problems, scaling inconsistencies, alignment concerns, bearing failures, and broader mechanical reliability issues.</p></div>
-        <div class="system-card"><h3>Do you help with repeat failures?</h3><p>Yes. A major focus is identifying why failures keep coming back and improving the maintenance response so the same issue does not continue costing production time.</p></div>
-        <div class="system-card"><h3>Can you help improve plant reliability?</h3><p>Yes. We support maintenance system improvement, downtime reduction strategy, equipment issue investigation, and practical reliability strengthening around critical assets.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container panel" style="margin-bottom:90px;">
-      <div class="section-head">
-        <div>
-          <div class="section-kicker">Google & Local Trust</div>
-          <h2 class="section-title">Simple trust boosters that help you look more real online.</h2>
-        </div>
-        <p class="section-sub">When you are ready, replace the placeholder buttons below with your live business links.</p>
-      </div>
-
-      <div class="hero-actions">
-        <a href="#reviews" class="btn btn-primary">Leave a Website Review</a>
-        <a href="https://www.google.com/search?q=Brownson+Industrial+Consulting" target="_blank" class="btn btn-secondary">Google Business Search</a>
-        <a href="#contact" class="btn btn-outline" style="color:var(--text); border-color:var(--line);">Request a Quote</a>
-      </div>
-    </div>
-  </section>
-
 </body>
 </html>
